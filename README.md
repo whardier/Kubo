@@ -1,11 +1,12 @@
 KuboFS
 ======
 
-Star based block distribution system with a single point of failure.  Fun for some, not for all.
+Star based block distribution system with a single point of failure (soon no point of failure).
+Fun for some, not for all.
 
 KuboFS partitions large files into small blocks and attempts to distribute them to a central repository.
 
-Should be used for backups or with GFS2.
+Should be used for backups or with GFS2/OCFS2 and a DLM.
 
 Writes are not complete until they have been uploaded to a central repository via a ZMQ Dealer socket and processed.
 
@@ -14,15 +15,8 @@ optionally download it.  By default KuboFS will not download blocks and will dow
 peer replies nominally control is returned to the KuboFS peer that initiated the write and subsequently the filesystem
 driver using the block device.
 
-Future Plans
-============
-
-I'd like to make a Python NBD server to handle this with individual config files rather than use Fuse and get rid of
-that requirement entirely.
-
 Requirements
 ============
 
   - [Python](http://www.python.org/)
-  - [FusePy](http://code.google.com/p/fusepy/)
   - [PyZMQ](http://zeromq.github.com/pyzmq/)
