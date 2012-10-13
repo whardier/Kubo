@@ -4,7 +4,7 @@ Kubo
 Star based block distribution system with a single point of failure (soon no point of failure).
 Fun for some, not for all.
 
-KuboFS is an emulated NBD that maps blocks to a bunch of smaller files.  It can be run standalone or as a client where
+Kubo is an emulated NBD that maps blocks to a bunch of smaller files.  It can be run standalone or as a client where
 it attempts to distribute the current block state to a central repository atomically, slowly, but atomically.
 
 Standalone Mode
