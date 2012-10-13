@@ -11,7 +11,7 @@ Standalone Mode
 ===============
 
 Do whatever you want with the files.  A log file will be written to the base of the storage directory that includes a
-list of all blocks that have changed.  This log file can be rotated as well as disabled.
+list of all storage files and blocks with their relative path that have changed.  This log file can be rotated as well as disabled.
 
 Network Mode
 ============
