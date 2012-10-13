@@ -32,6 +32,13 @@ flattened blocks using the previous deltas.  This allows for much more optimized
 Once a block has changed a certain amount of times previous deltas are applied and the block is flattened and the delta
 log is reset.
 
+Features
+========
+
+  - Dedupe, of course
+  - Sparse blocks, of ourse
+  - Compression, of course
+
 Requirements
 ============
 
